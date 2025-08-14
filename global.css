@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+
+  /* Cor Dark Mode */
+
+  --primary-color: #F5F7FA;
+
+  --primary-bg-color: #1E1E2F;
+  --secundary-bg-color: #2A2A3B;
+  --border-color: #2A2A3B;
+
+  --title-color: #9a9a9c;
+  --text-color:#9a9a9c;
+  --link-color: #9a9a9c;
+  --icon-color: #c7c8c9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  list-style: none;
+
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  color: var(--icon-color);
+}
