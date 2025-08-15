@@ -1,52 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aguinaldo Braga | Portfólio</title>
-  <meta name="description" content="Portfólio pessoal desenvolvido com HTML, CSS e JavaScript. Apresenta projetos, habilidades e trajetória como desenvolvedor front-end. Com design responsivo e tema dinâmico.">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="global.css">
-  <link rel="stylesheet" href="assets/style/style.css">
-</head>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aguinaldo Braga | Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio pessoal desenvolvido com HTML, CSS e JavaScript. Apresenta projetos, habilidades e trajetória como desenvolvedor front-end. Com design responsivo e tema dinâmico."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="conteinner-top">
-      <p class="conteinner-logo">Gui<span>Braga</span></p>
-    </div>
-    <i id="logTheme" class="bi bi-sun"></i>
-  </header>
+  <body>
+    <header class="header">
+      <div class="interface">
+        <div class="conteinner-top">
+          <p class="conteinner-logo">Gui<span>Braga</span></p>
+        </div>
 
-  <nav>
-    <ul class="menu menu-mobile">
-      <li class="menu-item">
-        <a class="menu-link" href="#home">
-          <i class="menu-icon bi bi-house"></i>
-          <span class="menu-text">Home</span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link active" href="#projetos">
-          <i class="menu-icon bi bi-window-stack"></i>
-          <span class="menu-text">Projetos</span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#sobre">
-          <i class="menu-icon bi bi-person"></i>
-          <span class="menu-text">Sobre</span>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#contatos">
-          <i class="menu-icon bi bi-envelope"></i>
-          <span class="menu-text">Contatos</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <div class="conteiner-nav-principal">
+          <nav class="conteiner-nav">
+            <ul class="menu menu-principal">
+              <li class="menu-item">
+                <a class="menu-link" href="#home">
+                  <span class="menu-text">Home</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link active" href="#projetos">
+                  <span class="menu-text">Projetos</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#sobre">
+                  <span class="menu-text">Sobre</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#contatos">
+                  <span class="menu-text">Contatos</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icon-logTheme">
+          <i id="logTheme" class="bi bi-sun"></i>
+        </div>
+      </div>
+    </header>
 
-</body>
+    <!-- Mobile -->
+    <nav class="nave-mobile">
+      <ul class="menu menu-mobile">
+        <li class="menu-item">
+          <a class="menu-link" href="#home">
+            <i class="menu-icon bi bi-house"></i>
+            <span class="menu-text">Home</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link active" href="#projetos">
+            <i class="menu-icon bi bi-window-stack"></i>
+            <span class="menu-text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#sobre">
+            <i class="menu-icon bi bi-person"></i>
+            <span class="menu-text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="#contatos">
+            <i class="menu-icon bi bi-envelope"></i>
+            <span class="menu-text">Contatos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="conteiner-hero">
+        <div class="conteiner-hero-texto">
+          <h1><b>Soluções criativas</b> em desenvolvimento <span>front-end</span>.</h1>
+          <p>Aguinaldo Braga, Manaus-Am, Desenvolvedor Front-end</p>
+          <ul class="menu menu-social">
+            <li>
+              <a class="menu-link" href="#">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a class="menu-link" href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <button class="btn btn-primay">
+            <span>Ver Prjetos</span>
+            <i class="bi bi-box-arrow-down-right"></i>
+          </button>
+        </div>
+
+        <div class="conteiner-hero-vidio">
+          <iframe src="assets/videos/aguinaldo-braga-video.mp4" frameborder="0"></iframe>
+        </div>
+      </section>
+
+      <section class="conteiner-habilidades">
+        <div class="habilidades">
+          <h2>Habilidades</h2>
+          <p>Conhecimento nas principais tecnologias do mercado, com foco em desenvolvimento front-end moderno e responsivo. Domínio de ferramentas que impulsionam a criação de interfaces intuitivas e performáticas.</p>
+          <ul class="habilidades-list">
+            <li class="habilidades-item">
+              <img class="habilidades-logo" src="assets/img/icons8-angular-24.png" alt="logo angular">
+            </li>
+            <li class="habilidades-item">
+              <img class="habilidades-logo" src="assets/img/icons8-css3-50.png" alt="logo css">
+            </li>
+            <li class="habilidades-item">
+              <img class="habilidades-logo" src="assets/img/icons8-html5-50.png" alt=" logo Html">
+            </li>
+            <li class="habilidades-item">
+              <img class="habilidades-logo" src="assets/img/icons8-js-50.png" alt="logo JavaScript">
+            </li>
+            <li class="habilidades-item">
+              <img class="habilidades-logo" src="assets/img/icons8-react-24.png" alt="logo react">
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Todos os direitos reservados.</p>
+      <p>Site desenvolvido por <a href="#">Aguinaldo</a>.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-:root {
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+:root, :root[data-theme='dark']{
 
   /* Cor Dark Mode */
 
@@ -14,6 +17,27 @@
   --link-color: #9a9a9c;
   --icon-color: #c7c8c9;
 }
+
+:root[data-theme="ligth"] {
+  /* Cor Light Mode  */
+
+  --primary-color: #0b0b0f;
+
+  --primary-bg-color: #e9e9e9;
+  --secundary-bg-color: #28292e;
+  --border-color: #c7c8c9;
+
+  --title-color: #0b0b0f;
+  --text-color:#28292e;
+  --link-color: #28292e;
+  --icon-color: #56575a;
+}
+
+[data-theme="dark"] img.habilidades-logo {
+  filter: brightness(0) saturate(100%) invert(1);
+}
+
+
 
 * {
   margin: 0;
@@ -34,8 +58,25 @@ body {
 
 }
 
+h1, h2, h3 {
+  font-family: "League Spartan", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--primary-color);
+}
+
 a {
   text-decoration: none;
+  color: var(--text-color);
+
+}
+
+a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 i {
