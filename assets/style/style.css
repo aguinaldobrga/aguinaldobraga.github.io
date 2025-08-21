@@ -65,7 +65,6 @@
 /* NAVEGAÇÃO */
 /* ========================================================================= */
 
-/* Estilos de menu genérico para desktop e mobile */
 .menu {
   display: flex;
   gap: 1.5rem;
@@ -80,12 +79,11 @@
   color: var(--text-color);
 }
 
-/* Estilos para o menu de navegação principal (desktop) */
 .menu-principal {
   gap: 4rem;
 }
 
-/* Estilos para o menu mobile */
+
 .nave-mobile {
   position: fixed;
   bottom: 0;
@@ -128,7 +126,6 @@
   font-size: 0.999rem;
 }
 
-/* Estilos de estado ativo e hover */
 .menu-link.active .menu-icon,
 .menu-link.active .menu-text,
 .menu-link:hover .menu-icon,
@@ -203,7 +200,7 @@
   border: 1px solid var(--primary-color);
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  text-decoration: none; /* Garante que os <a> se pareçam com botões */
+  text-decoration: none; 
 }
 
 .btn:hover,
@@ -311,7 +308,7 @@
 
 .card-projeto {
   display: flex;
-  flex-direction: column; /* Estilo padrão para mobile (texto em cima, imagem embaixo) */
+  flex-direction: column;
   background-color: var(--primary-bg-color);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -343,7 +340,7 @@
 .card-habilidades-list {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap; /* Adicionado para evitar quebras de linha indesejadas */
+  flex-wrap: wrap;
 }
 
 .card-title {
@@ -373,7 +370,7 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: auto; /* Empurra os botões para o final do card */
+  margin-top: auto; 
 }
 
 /* ========================================================================= */
@@ -402,7 +399,7 @@
 
 .carde-conteiner-sobre {
   display: flex;
-  flex-direction: column; /* Padrão mobile: imagem e texto empilhados */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -441,27 +438,26 @@
   display: flex;
 }
 
-/* Os estilos para btn-sobre foram movidos para a classe .btn, já que o HTML agora usa <a> */
+
 
 /* ========================================================================= */
 /* FORMAÇÃO */
 /* ========================================================================= */
 .formacao {
   margin-top: 5rem;
-  align-items: center; /* Centraliza a seção horizontalmente */
+  align-items: center; 
   padding: 2rem 1rem;
  
-  gap: 2rem; /* Espaçamento entre os dois principais cards */
+  gap: 2rem; 
 }
 
-/* Contêiner principal para os títulos e cards */
 .conteiner-formacao,
 .card-formacao-cursos {
   width: 100%;
   max-width: 600px;
 }
 
-/* Estilo para o título da seção */
+
 .conteiner-formacao > h2,
 .card-formacao-cursos > h2 {
   font-size: 2.5rem;
@@ -487,7 +483,7 @@
   font-size: 1rem;
   color: var(--text-color);
   font-style: italic;
-  margin-top: -0.5rem; /* Ajusta o espaçamento */
+  margin-top: -0.5rem;
 }
 
 .card-icone-formacao {
@@ -542,7 +538,7 @@
 
 .footer {
   display: flex;
-  flex-direction: column; /* Use flex-direction column para mobile-first */
+  flex-direction: column; 
   text-align: center;
   padding: 1rem;
   background-color: var(--background-color);
@@ -627,7 +623,7 @@
   }
 
   .card-projeto {
-    flex-direction: row; /* Layout padrão para desktop (imagem à esquerda) */
+    flex-direction: row;
     align-items: stretch;
     width: 100%;
     max-width: 800px;
@@ -671,7 +667,7 @@
   }
 
   .carde-conteiner-sobre {
-    flex-direction: row; /* Desktop: imagem e texto lado a lado */
+    flex-direction: row; 
     gap: 4rem;
   }
 
@@ -681,16 +677,16 @@
   }
 
   .carde-sobre-item {
-    text-align: left; /* Desktop: alinha texto à esquerda */
+    text-align: left; 
     align-items: flex-start;
   }
 
   .card-buttun {
-    flex-direction: row; /* Desktop: botões lado a lado */
+    flex-direction: row; 
   }
 
   .formacao {
-    flex-direction: column; /* Layout em linha (lado a lado) para desktop */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     gap: 4rem;
